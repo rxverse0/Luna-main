@@ -5,18 +5,29 @@
     src:url(Cushy.ttf);
 }
 
+@font-face {
+    font-family: myfont2;
+    src:url(Camping.ttf);
+}
+
+
+
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f7ac96;
+    flex-shrink: 1;
+    min-width: 0;
+    min-height: 0;
 }
 
 li {
@@ -27,9 +38,8 @@ ul {
     display: flex;
     margin-right: 40px;
     gap: 40px;
-    flex: 1;
-    align-content: stretch;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 a {
@@ -52,15 +62,147 @@ a {
 /*container1 start*/
 
 .container1 {
-    display:flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 80px 0;
+    gap: 80px;
+    background-image: url("./luna-img/paws.jpg");
+}   
+
+.descriere {
+    flex-direction: column;
+    justify-content: space-around;
+    color:hwb(16 27% 63%);
+    border: 10px;
+    width: 30%;
+    gap: 40px;
+}
+
+.imagine > .luna1 {
+    width: 400px;
+    height: 50%;
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.luna1 {
+    border-radius: 15px 50px 30px;
+    border: 5px solid hsl(13, 52%, 88%);
+}
+
+.trei {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+}
+
+.trei3 {
+    height:100%;
+    width:auto;
+    color:white;
+    background-color: #f7ac96;
+    border: 3px;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: myfont;
+    display: flex;
     align-items: center;
 }
 
+/*container2 start*/
 
-
-.imagine {
+.shenanigans {
     display: flex;
-    width: 200px;
-    height: 200px;
+    justify-content: center;
+    margin: 40px 0;
+    color:hwb(16 27% 63%);
+    font-size: x-large;
 }
+
+.infopoze {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.infopoza > img {
+    border: 5px solid hsl(13, 52%, 88%);
+    border-radius: 25px;
+    width: 250px;
+    height: 50%;
+    max-width:100%;
+    max-height:100%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    gap: 40px 0;
+    color: hwb(16 27% 63%);
+}
+
+/* container3 */
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(13, 52%, 88%);
+}
+
+.quote {
+    font-family: myfont2;
+    font-size: xx-large;
+    color:white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px hwb(175 0% 64%);
+    width: 70%;
+    margin-top: 40px;
+}
+
+.container3 > .choki {
+    font-weight: 800;
+    display: flex;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color:hwb(16 27% 63%);
+}
+
+/* container4 start */
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+.pink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    border-radius: 25px;
+    background-color:  hwb(16 27% 63%);
+    padding: 20px;
+}
+
+.textpink {
+    color:white;
+    
+}
+
